@@ -19,6 +19,7 @@
 		B1A0753C1CEE157F00B24C51 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0753B1CEE157F00B24C51 /* NotificationsViewController.swift */; };
 		B1A0753E1CEE158F00B24C51 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0753D1CEE158F00B24C51 /* MessagesViewController.swift */; };
 		B1A075401CEE159B00B24C51 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0753F1CEE159B00B24C51 /* MoreViewController.swift */; };
+		B1A075421CEE1C2800B24C51 /* ThrillistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A075411CEE1C2800B24C51 /* ThrillistDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B1A0753B1CEE157F00B24C51 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		B1A0753D1CEE158F00B24C51 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		B1A0753F1CEE159B00B24C51 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		B1A075411CEE1C2800B24C51 /* ThrillistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrillistDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				B1A0753B1CEE157F00B24C51 /* NotificationsViewController.swift */,
 				B1A0753D1CEE158F00B24C51 /* MessagesViewController.swift */,
 				B1A0753F1CEE159B00B24C51 /* MoreViewController.swift */,
+				B1A075411CEE1C2800B24C51 /* ThrillistDetailViewController.swift */,
 			);
 			path = FacebookLab;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				B1A075381CED48D600B24C51 /* FeedViewController.swift in Sources */,
 				B1A0753A1CED4BEF00B24C51 /* RequestsViewController.swift in Sources */,
 				B1A075081CEBF25A00B24C51 /* AppDelegate.swift in Sources */,
+				B1A075421CEE1C2800B24C51 /* ThrillistDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
