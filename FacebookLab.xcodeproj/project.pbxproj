@@ -14,6 +14,11 @@
 		B1A075121CEBF25A00B24C51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A075101CEBF25A00B24C51 /* LaunchScreen.storyboard */; };
 		B1A0751D1CEBF25A00B24C51 /* FacebookLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0751C1CEBF25A00B24C51 /* FacebookLabTests.swift */; };
 		B1A075281CEBF25A00B24C51 /* FacebookLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A075271CEBF25A00B24C51 /* FacebookLabUITests.swift */; };
+		B1A075381CED48D600B24C51 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A075371CED48D600B24C51 /* FeedViewController.swift */; };
+		B1A0753A1CED4BEF00B24C51 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A075391CED4BEF00B24C51 /* RequestsViewController.swift */; };
+		B1A0753C1CEE157F00B24C51 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0753B1CEE157F00B24C51 /* NotificationsViewController.swift */; };
+		B1A0753E1CEE158F00B24C51 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0753D1CEE158F00B24C51 /* MessagesViewController.swift */; };
+		B1A075401CEE159B00B24C51 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0753F1CEE159B00B24C51 /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		B1A075231CEBF25A00B24C51 /* FacebookLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A075271CEBF25A00B24C51 /* FacebookLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLabUITests.swift; sourceTree = "<group>"; };
 		B1A075291CEBF25A00B24C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A075371CED48D600B24C51 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		B1A075391CED4BEF00B24C51 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		B1A0753B1CEE157F00B24C51 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		B1A0753D1CEE158F00B24C51 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		B1A0753F1CEE159B00B24C51 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				B1A0750E1CEBF25A00B24C51 /* Assets.xcassets */,
 				B1A075101CEBF25A00B24C51 /* LaunchScreen.storyboard */,
 				B1A075131CEBF25A00B24C51 /* Info.plist */,
+				B1A075371CED48D600B24C51 /* FeedViewController.swift */,
+				B1A075391CED4BEF00B24C51 /* RequestsViewController.swift */,
+				B1A0753B1CEE157F00B24C51 /* NotificationsViewController.swift */,
+				B1A0753D1CEE158F00B24C51 /* MessagesViewController.swift */,
+				B1A0753F1CEE159B00B24C51 /* MoreViewController.swift */,
 			);
 			path = FacebookLab;
 			sourceTree = "<group>";
@@ -256,7 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A075401CEE159B00B24C51 /* MoreViewController.swift in Sources */,
+				B1A0753E1CEE158F00B24C51 /* MessagesViewController.swift in Sources */,
+				B1A0753C1CEE157F00B24C51 /* NotificationsViewController.swift in Sources */,
 				B1A0750A1CEBF25A00B24C51 /* ViewController.swift in Sources */,
+				B1A075381CED48D600B24C51 /* FeedViewController.swift in Sources */,
+				B1A0753A1CED4BEF00B24C51 /* RequestsViewController.swift in Sources */,
 				B1A075081CEBF25A00B24C51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

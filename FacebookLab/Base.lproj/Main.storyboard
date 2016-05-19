@@ -5,76 +5,182 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Requests View Controller-->
         <scene sceneID="GXX-nf-IQb">
             <objects>
-                <viewController id="S5O-Lr-z3p" sceneMemberID="viewController">
+                <viewController id="S5O-Lr-z3p" customClass="RequestsViewController" customModule="FacebookLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nSa-Wx-lXf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.9882352941176471" green="0.84705882352941175" blue="0.44705882352941179" alpha="1" colorSpace="deviceRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav" id="5M5-gg-TgV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="ap1-ZY-hN2">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="people" id="7Eb-Q7-iZO">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1006"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="G96-ca-3g9"/>
+                    <connections>
+                        <outlet property="imageView" destination="7Eb-Q7-iZO" id="M2y-4c-FCa"/>
+                        <outlet property="scrollView" destination="ap1-ZY-hN2" id="qgG-jS-my8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0u-ca-DE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="601" y="2524"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="T0t-mN-xxs">
             <objects>
-                <viewController id="R5A-Fy-R9i" sceneMemberID="viewController">
+                <viewController id="R5A-Fy-R9i" customClass="FeedViewController" customModule="FacebookLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v6R-Hr-ZN3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.63921568627450975" green="0.80784313725490198" blue="0.44313725490196076" alpha="1" colorSpace="deviceRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav" id="qcq-y6-5ww">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compose" id="y60-Ze-B8N">
+                                <rect key="frame" x="0.0" y="63" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="0CJ-We-2g8">
+                                <rect key="frame" x="0.0" y="107" width="320" height="461"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="home_feed" id="YAN-0Y-z3Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1025"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.80000000000000004" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="6dR-bH-Byf"/>
+                    <connections>
+                        <outlet property="imageView" destination="YAN-0Y-z3Z" id="irS-n1-jDS"/>
+                        <outlet property="scrollView" destination="0CJ-We-2g8" id="bU7-FE-j1d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGP-5l-eRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="129" y="2524"/>
         </scene>
-        <!--View Controller-->
+        <!--Messages View Controller-->
         <scene sceneID="SIy-o9-xMu">
             <objects>
-                <viewController id="1dn-e4-mAG" sceneMemberID="viewController">
+                <viewController id="1dn-e4-mAG" customClass="MessagesViewController" customModule="FacebookLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7F7-J7-p2F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96862745098039216" green="0.5725490196078431" blue="0.23137254901960785" alpha="1" colorSpace="deviceRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav" id="sIb-3c-Cip">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="vx2-kf-QeM">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="messages" id="dtY-qc-NKc">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="wc6-ys-o59"/>
+                    <connections>
+                        <outlet property="imageView" destination="dtY-qc-NKc" id="Vas-Dw-R9v"/>
+                        <outlet property="scrollView" destination="vx2-kf-QeM" id="9H0-s8-C60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mhz-eB-ZZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1105" y="2524"/>
         </scene>
-        <!--View Controller-->
+        <!--Notifications View Controller-->
         <scene sceneID="Hib-Hb-ehJ">
             <objects>
-                <viewController id="7iJ-fB-gwb" sceneMemberID="viewController">
+                <viewController id="7iJ-fB-gwb" customClass="NotificationsViewController" customModule="FacebookLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QlD-9T-VfO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98431372549019602" green="0.44705882352941179" blue="0.29411764705882354" alpha="1" colorSpace="deviceRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav" id="Ks2-ve-S0N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="W6T-rR-ehT">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="notifications" id="ckZ-u6-3et">
+                                        <rect key="frame" x="0.0" y="-64" width="320" height="818"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <inset key="contentInset" minX="0.0" minY="64" maxX="0.0" maxY="0.0"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="SfS-Mo-TGe"/>
+                    <connections>
+                        <outlet property="imageView" destination="ckZ-u6-3et" id="9wK-WV-OL3"/>
+                        <outlet property="scrollView" destination="W6T-rR-ehT" id="c1Q-3p-Qm5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="923-65-F4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1577" y="2524"/>
         </scene>
-        <!--View Controller-->
+        <!--More View Controller-->
         <scene sceneID="XGb-n2-iQ9">
             <objects>
-                <viewController id="dzy-2M-WAz" sceneMemberID="viewController">
+                <viewController id="dzy-2M-WAz" customClass="MoreViewController" customModule="FacebookLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ne-iv-Z1J">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.92549019607843142" green="0.49411764705882355" blue="0.74117647058823533" alpha="1" colorSpace="deviceRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav" id="jmW-qk-1Kz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="33J-j1-l0B">
+                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="Ecv-bh-gO0">
+                                        <rect key="frame" x="0.0" y="-62" width="320" height="1800"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <inset key="contentInset" minX="0.0" minY="64" maxX="0.0" maxY="0.0"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Iqj-LL-ftx"/>
+                    <connections>
+                        <outlet property="imageView" destination="Ecv-bh-gO0" id="DwC-S1-gHs"/>
+                        <outlet property="scrollView" destination="33J-j1-l0B" id="mBR-7d-s8e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RsH-ru-C0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,7 +210,7 @@
         <!--Requests-->
         <scene sceneID="Mnm-kI-xHQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n4a-Pt-Zbv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="n4a-Pt-Zbv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Requests" image="requests_tab" id="90P-9F-sga"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UQm-VD-XLo">
@@ -123,7 +229,7 @@
         <!--News Feed-->
         <scene sceneID="PMj-w3-40b">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f3d-QG-Die" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="f3d-QG-Die" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="News Feed" image="feed_tab" id="Ad1-dT-Oiu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="waj-5e-HB8">
@@ -142,7 +248,7 @@
         <!--Messages-->
         <scene sceneID="rsY-aJ-tWG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rj6-Lj-ykt" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rj6-Lj-ykt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Messages" image="messages_tab" id="361-Vg-siz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dg7-pH-8If">
@@ -161,7 +267,7 @@
         <!--Notfications-->
         <scene sceneID="eQr-fo-bqD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vjd-JG-EH2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Vjd-JG-EH2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Notfications" image="notifications_tab" id="kZV-ll-8Gh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bBt-09-4Sf">
@@ -180,7 +286,7 @@
         <!--More-->
         <scene sceneID="q3H-jK-hVh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="79c-tL-vBX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="79c-tL-vBX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="More" image="more_tab" id="0Ip-Yj-Gh3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fPr-wV-Nd9">
@@ -198,10 +304,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="compose" width="320" height="46"/>
         <image name="feed_tab" width="27" height="27"/>
+        <image name="home_feed" width="320" height="1025"/>
+        <image name="messages" width="320" height="460"/>
         <image name="messages_tab" width="27" height="27"/>
         <image name="more_tab" width="27" height="27"/>
+        <image name="nav" width="320" height="64"/>
+        <image name="notifications" width="320" height="818"/>
         <image name="notifications_tab" width="27" height="27"/>
+        <image name="people" width="320" height="1006"/>
         <image name="requests_tab" width="27" height="27"/>
+        <image name="settings" width="320" height="1800"/>
     </resources>
 </document>
