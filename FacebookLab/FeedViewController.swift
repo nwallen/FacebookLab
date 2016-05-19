@@ -17,7 +17,6 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentSize = imageView.image!.size
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

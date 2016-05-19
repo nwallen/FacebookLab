@@ -12,14 +12,22 @@ class ThrillistDetailViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var commentView: UIView!
+    @IBOutlet weak var commentTextField: UITextField!
+    
+    var initialY: CGFloat!
+    var offset: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.automaticallyAdjustsScrollViewInsets = false;
+        initialY = commentView.frame.origin.y
+        offset = -175
         scrollView.contentSize = imageView.image!.size
-
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+         NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         
-        // Do any additional setup after loading the view.
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,10 +40,27 @@ class ThrillistDetailViewController: UIViewController {
         sender.selected = !sender.selected
     }
 
+    @IBAction func didTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
+    
     @IBAction func onBackButton(sender: AnyObject) {
         
         navigationController!.popViewControllerAnimated(true)
     }
+    
+    func keyboardWillShow(notification: NSNotification!) {
+        
+        UIView.animateWithDuration(0.3, delay: 0.02, options:[], animations:{
+              self.commentView.frame.origin.y = self.initialY + self.offset
+        }, completion: nil)
+      
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+       commentView.frame.origin.y = initialY
+    }
+    
     /*
     // MARK: - Navigation
 
