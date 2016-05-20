@@ -1,4 +1,4 @@
-## Facebook - LAB
+## Facebook - WEEK 1 LAB
 Time spent: `3`
 
 ### Features
@@ -8,7 +8,7 @@ Time spent: `3`
 - [x] User can tap through and scroll each tab of the app
 - [x] User can enter story detail view
   - [x] User can like post
-  - [x] User can scroll stor
+  - [x] User can scroll story
 - [x] User can tap into composer options and close them
 
 #### Optional
